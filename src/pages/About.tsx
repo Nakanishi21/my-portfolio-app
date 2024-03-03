@@ -1,4 +1,5 @@
 import React from 'react';
+import '../components/Glitch.css'
 
 interface StarRatingProps {
   rating: number;
@@ -17,11 +18,12 @@ const StarRating: React.FC<StarRatingProps> = ({ rating, language }) => {
   );
 };
 
+
 const About: React.FC = () => {
   return (
     <div>
       <section>
-        <h1>私について</h1>
+        <h1 className='glitch-text' data-text="私について">私について</h1>
         <p>はじめまして！リチャードです（本名です）。</p>
         <p>
           サイバーパンクが好きで、将来的にはそういうものに囲まれた暮らしがしたいと思ってます。<br />
@@ -31,7 +33,7 @@ const About: React.FC = () => {
       </section>
 
       <section>
-        <h2>趣味</h2>
+        <h2 className='glitch-text' data-text="趣味">趣味</h2>
         <ul>
           <li>サイバーパンク</li>
           <li>アクション映画鑑賞</li>
@@ -55,7 +57,7 @@ const About: React.FC = () => {
       </section>
 
       <section>
-        <h2>スキルセット</h2>
+        <h2 className='glitch-text' data-text="スキルセット">スキルセット</h2>
         <ul>
           <li>
             <StarRating rating={4} language="Ruby" />
