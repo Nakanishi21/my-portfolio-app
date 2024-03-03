@@ -1,8 +1,10 @@
 import React from 'react';
 import Header from './components/Header';
 import Home from './pages/Home';
-import { SamplePage2 } from './pages/SamplePage';
 import { Routes, Route } from 'react-router-dom';
+import Products from './pages/Products';
+import About from './pages/About';
+import Career from './pages/Career';
 
 const App: React.FC = () => {
   return (
@@ -10,7 +12,10 @@ const App: React.FC = () => {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/SamplePage2" element={<SamplePage2 />} />
+        <Route path="/About" element={<About />} />
+        <Route path="/Career" element={<Career />} />
+        <Route path="/Products" element={<Products />} />
+        
       </Routes>
     </div>
   );
