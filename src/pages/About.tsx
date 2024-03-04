@@ -8,7 +8,7 @@ interface StarRatingProps {
 
 const StarRating: React.FC<StarRatingProps> = ({ rating, language }) => {
   const stars = Array.from({ length: rating }, (_, index) => (
-    <span key={index} className={index < rating ? 'star-filled' : 'star-empty'}>★</span>
+    <span key={index} style={{color: "#FF0DC0"}} className={index < rating ? 'star-filled' : 'star-empty'}>★</span>
   ));
 
   return (
@@ -54,6 +54,17 @@ const About: React.FC = () => {
             </ul>
           </li>
         </ul>
+      </section>
+
+      <section>
+        <h1 className='glitch-text' data-text="モットー">モットー</h1>
+        <h2>楽しく働きたい。だから働く環境を楽しいものにしたい</h2>
+        <p>
+          基本的に仕事は1日8時間。1日の1/3を使っています。<br />
+          この1/3を嫌々、つまらなく過ごすのは非常にもったいない。<br />
+          「仕事は辛く大変なもの」という価値観を壊すべく、みんなが楽しく働ける・楽になる社内システムをどんどん作っていきたいです。<br />
+        </p>
+        <p></p>
       </section>
 
       <section>
