@@ -7,7 +7,7 @@ const Career: React.FC = () => {
   return (
     <div>
       <h1 className='glitch-text' data-text="経歴">経歴</h1>
-      <h2>学歴</h2>
+      <h2 style={{color: "white"}}>学歴</h2>
       <Education 
         school="京都産業大学 コンピュータ理工学部"
         degree="学士号"
@@ -28,7 +28,7 @@ const Career: React.FC = () => {
         ]} 
       />
 
-      <h2>職歴</h2>
+      <h2 style={{color: "white"}}>職歴</h2>
       <WorkExperience
         company="日星電気株式会社"
         position="社内SE"
@@ -46,7 +46,7 @@ const Career: React.FC = () => {
       <WorkExperience
         company="株式会社ダブルクロップ"
         position="エンジニア（2021年から社内ではリーダーポジション）"
-        year="2018-present"
+        year="2018-現在"
         sentences={[
           "SESとして様々なプロジェクトに参画。フロントエンド・バックエンド双方の開発に携わる。",
           "フロントエンドの開発ではTypeScriptとVueもしくはReactを用いた開発を行っている。",
